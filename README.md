@@ -1,31 +1,68 @@
-# Auto-Spec-By-Team-ARISE
 
+# Custom Car Builder - Java Swing GUI Application
 
-# Car Build Java Project
+## 🛠️ Project Description
+**Custom Car Builder** is a GUI-based Java application that allows users to customize their dream car by selecting:
+- A car model
+- Seat material
+- Colors for seats, dashboard, and ambient lights
+- Additional optional features like a premium sound system, custom steering wheel, and ambient lighting kit
 
-## Features
-- Full Create, Read, Update, Delete (CRUD) using MySQL
-- Input validation for all constructors
-- File I/O to save and read car builds
+Once selections are made, a detailed summary of the build is generated for the user.
 
-## How to Run on Mac
-1. Ensure MySQL is running and use `carbuild_schema.sql` to set up DB.
-2. Compile Java files:
+---
+
+## 🚀 Features
+- Dropdown selection for car models and seat materials
+- Color pickers for seat, dashboard, and ambient lighting
+- Checkboxes for optional car features
+- Button to generate a full build summary
+- Scrollable output area to display the selected configuration
+- Input validation and safe error handling
+
+---
+
+## 🖼️ GUI Components Used
+- `JComboBox`
+- `JCheckBox`
+- `JButton`
+- `JColorChooser`
+- `JTextArea` with `JScrollPane`
+- `JPanel` and `JLabel` for layout management
+
+---
+
+## 🧪 Requirements
+- Java 8 or above
+- No external libraries required
+
+---
+
+## ▶️ How to Run
+1. Compile the Java file:
    ```bash
-   javac *.java
+   javac CustomCarBuilder_Refactored.java
    ```
-3. Run the project:
+2. Run the compiled class:
    ```bash
-   java Main
+   java CustomCarBuilder
    ```
 
-## Schema Setup
-Run `carbuild_schema.sql` using your MySQL client.
+---
 
-## Rubric Coverage
-- ✅ JDK & IDE setup
-- ✅ Proper project structure & file structure
-- ✅ Full CRUD
-- ✅ IO file integration
-- ✅ Input validation
-- ✅ Output & feedback
+## 📦 File Structure
+```
+CustomCarBuilder_Refactored.java   # Main Java source code file
+README.md                          # This documentation
+```
+
+---
+
+## 📌 Notes
+- Default fallback colors are used if the user cancels color selection.
+- All major GUI components and event listeners are modularized for better readability and maintainability.
+
+---
+
+## 📄 License
+This project is released under the MIT License.
